@@ -125,7 +125,7 @@ Source: [stackoverflow.com](https://tex.stackexchange.com/a/9855)
 ```tex
 \nolinebreak\[number]
 ```
-The \nolinebreak command prevents LaTeX from breaking the current line at the point of the command. With the optional argument, number, you can convert the \nolinebreak command from a demand to a request. The number must be a number from 0 to 4. The higher the number, the more insistent the request is.
+The `\nolinebreak` command prevents LaTeX from breaking the current line at the point of the command. With the optional argument, number, you can convert the `\nolinebreak` command from a demand to a request. The number must be a number from 0 to 4. The higher the number, the more insistent the request is.
 
 ### \nopagebreak
 
@@ -133,5 +133,5 @@ The \nolinebreak command prevents LaTeX from breaking the current line at the po
 \nopagebreak\[number]
 ```
 
-The \nopagebreak command prevents LaTeX form breaking the current page at the point of the command. With the optional argument, number, you can convert the \nopagebreak command from a demand to a request. The number must be a number from 0 to 4. The higher the number, the more insistent the request is.
+The `\nopagebreak` command prevents LaTeX form breaking the current page at the point of the command. With the optional argument, number, you can convert the `\nopagebreak` command from a demand to a request. The number must be a number from 0 to 4. The higher the number, the more insistent the request is.
 
