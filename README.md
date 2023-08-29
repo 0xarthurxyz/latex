@@ -63,12 +63,11 @@ decentralized application platform’.
 
 For bibliography management, use:
 
-+	[mybib.com](https://www.mybib.com/) (free and `.bib` file export),
++	[mybib.com](https://www.mybib.com/) (recommended, free, browser-based and `.bib` file export),
 +	[jabref.org](https://www.jabref.org/) (open source and 
-	[recommended by MIT](https://libguides.mit.edu/cite-write/bibtex#:~:text=If%20you%20primarily,Started%20guidance.)
-	)
-+	[citethis.net](https://citethis.net/Harvard) (no `.bib` file), 
-+	[easybib.com](https://www.easybib.com/) (owned by Chegg and premium only), or 
+	[recommended by MIT](https://libguides.mit.edu/cite-write/bibtex#:~:text=If%20you%20primarily,Started%20guidance.))
++	[citethis.net](https://citethis.net/Harvard) (no `.bib` file), or
++	[easybib.com](https://www.easybib.com/) (owned by Chegg and premium only).
 
 
 ## Abstract
