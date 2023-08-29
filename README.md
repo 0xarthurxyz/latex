@@ -162,6 +162,10 @@ Hello this command is creating two todos \todo{Just showing.}.
 \todo{Fixing the bug}
 This next command is  creating a todo with an optional text argument \todo[Ex.]{Optional argument.}.
 
+This is an exmaple todo that is done \done\todo{Example of a todo that has been `done'}
+
+\todos % This command adds the list of all the todos in the document.
+
 \end{document} 
 ```
 
