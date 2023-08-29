@@ -1,5 +1,76 @@
 # $\LaTeX$ (Cheat Sheet)
 
+## Text formatting
+
+
+Italic:
+
+```tex
+\textit{code coverage}
+```
+
+Bold:
+
+```tex
+\textbf{code coverage}
+```
+
+## Citations
+
+In text citation:
+
+```tex
+...
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{agsm}
+% Provides bibliography functionality
+
+\begin{document}
+
+...
+\citep{buterin_2014_ethereum}
+
+...
+\bibliography{bibliography}
+
+...
+\end{document}
+```
+
+With `.bib` file (e.g. `bibliography.bib`):
+
+```bibtex
+@misc{buterin_2014_ethereum,
+  author = {Buterin, Vitalik},
+  title = {Ethereum: A Next-Generation Smart Contract and Decentralized Application Platform},
+  urldate = {2023-05-21},
+  year = {2014}
+}
+```
+
+Renders as:
+
+```txt
+...
+Example citation [1].
+...
+
+References
+
+[1] Buterin, V. [2014], ‘Ethereum: A next-generation smart contract and
+decentralized application platform’.
+```
+
+For bibliography management, use:
+
++	[mybib.com](https://www.mybib.com/) (free and `.bib` file export),
++	[jabref.org](https://www.jabref.org/) (open source and 
+	[recommended by MIT](https://libguides.mit.edu/cite-write/bibtex#:~:text=If%20you%20primarily,Started%20guidance.)
+	)
++	[citethis.net](https://citethis.net/Harvard) (no `.bib` file), 
++	[easybib.com](https://www.easybib.com/) (owned by Chegg and premium only), or 
+
+
 ## Abstract
 
 Source: [silmaril.ie](http://latex.silmaril.ie/formattinginformation/abstracts.html)
@@ -172,3 +243,32 @@ This is an exmaple todo that is done \done\todo{Example of a todo that has been 
 <img src="assets/images/todo-command-output-example.png" width="350">
 
 Source: [ox.ac.uk](https://mirror.ox.ac.uk/sites/ctan.org/macros/latex/contrib/todo/todo-spl.pdf)
+
+## Figures
+
+Using the `graphicx` package:
+
+```tex
+...
+\usepackage{graphicx}
+% Provides image/figure/graphics display functionality (with files in assets/images/*)
+
+\begin{document}
+
+...
+\begin{figure}[ht]
+    \includegraphics[width=\textwidth]{assets/images/request-flow.drawio.png}
+    \caption{Illustrative architecture diagram}
+    \centering
+    \label{fig:request-flow}
+\end{figure}
+
+...
+\end{document}
+```
+
+with file at `assets/images/request-flow.drawio.png`.
+
+Renders as:
+
+<img src="assets/images/figure-graphicx-rendering-screenshot.png" width="650">
