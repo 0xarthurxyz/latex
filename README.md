@@ -150,3 +150,21 @@ The `\nolinebreak` command prevents LaTeX from breaking the current line at the 
 
 The `\nopagebreak` command prevents LaTeX form breaking the current page at the point of the command. With the optional argument, number, you can convert the `\nopagebreak` command from a demand to a request. The number must be a number from 0 to 4. The higher the number, the more insistent the request is.
 
+## Todos in LaTeX documents with the `todo` package
+
+Source: [ctang.org](https://ctan.org/tex-archive/macros/latex/contrib/todo)
+
+```tex
+\usepackage{todo}
+\begin{document}
+
+Hello this command is creating two todos \todo{Just showing.}.
+\todo{Fixing the bug}
+This next command is  creating a todo with an optional text argument \todo[Ex.]{Optional argument.}.
+
+\end{document} 
+```
+
+<img src="assets/images/todo-command-output-example.png" width="350">
+
+Source: [ox.ac.uk](https://mirror.ox.ac.uk/sites/ctan.org/macros/latex/contrib/todo/todo-spl.pdf)
