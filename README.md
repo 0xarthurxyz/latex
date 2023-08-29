@@ -1,5 +1,20 @@
 # $\LaTeX$ (Cheat Sheet)
 
+## Abstract
+
+Source: [silmaril.ie](http://latex.silmaril.ie/formattinginformation/abstracts.html)
+
+> In reports and articles it is usual for the author to provide an Summary or Abstract, which 
+> describes the content and explains its importance. Abstracts in articles are usually only a 
+> couple of paragraphs long. Summaries in reports or theses can run to several pages, depending on 
+> the length and complexity of the document or the readership it’s aimed at.
+
+```tex
+\begin{abstract}
+This is my abstract
+\end{abstract}
+```
+
 ## Breaks
 
 Source: [ceu.hu](http://www.personal.ceu.hu/tex/breaking.htm)
