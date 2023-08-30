@@ -92,16 +92,58 @@ Requires `\usepackage{hyperref}` in the preamble.
 ```tex
 \usepackage[
 	colorlinks,
-	citecolor=blue,
-	urlcolor=blue,
-	bookmarks=false,
-	hypertexnames=true
+	urlcolor=blue
 ]{hyperref}
 ```
 
 Renders as follows:
 
 <img src="assets/images/clickable-misc-bibtex-reference-rendering-screenshot.png" width="350">
+
+## Package: `hyperref` options
+
+Source: 
+[tex.stackexchange.com](https://tex.stackexchange.com/questions/50747/options-for-appearance-of-links-in-hyperref)
+
+> if you use `colorlinks=true` you can set (defaults in \[\]):
+> 
+> -   `linkcolor` \[red\]
+> -   `anchorcolor` \[black\]
+> -   `citecolor` \[green\]
+> -   `filecolor` \[cyan\]
+> -   `menucolor` \[red\]
+> -   `runcolor` \[cyan - same as file color\]
+> -   `urlcolor` \[magenta\]
+> -   `allcolors` \-- use this if you want to set all links to the same color
+> 
+> if you want some of these not coloured, simply set them to `.` (e.g., `citecolor=.`), which will
+> use the color of the text where the link appears.
+> 
+> if you use `colorlinks=false` and therefore want the frames around the links you have access to 
+> these settings:
+> 
+> -   `citebordercolor` \[rgb 0 1 0\]
+> -   `filebordercolor` \[rgb 0 .5 .5\]
+> -   `linkbordercolor` \[rgb 1 0 0\]
+> -   `menubordercolor` \[rgb 1 0 0\]
+> -   `urlbordercolor` \[rgb 0 1 1\]
+> -   `runbordercolor` \[rgb 0 .7 .7\]
+> -   `allbordercolors`
+> 
+> again if you want some of these to not appear, set them to white.
+> 
+> In your case, if you want the frames around links in citations but not on the table of content 
+> (and therefore not on other links such as to figures, tables or footnotes) I suggest you have 
+> a `\hypersetup` configuration with at least:
+> 
+> ```tex
+> \usepackage{hyperref}
+> \hypersetup{
+>     colorlinks = false,
+>     linkbordercolor = {white},
+>     <your other options...>,
+> }
+> ```
 
 ## Bibliography management
 
