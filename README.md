@@ -42,7 +42,7 @@ In text citation:
 \citep{buterin_2014_ethereum}
 
 ...
-\bibliography{bibliography}
+\bibliography{bibliography.bib}
 
 ...
 \end{document}
@@ -72,11 +72,53 @@ References
 decentralized application platform’.
 ```
 
-For bibliography management, use:
+Clickable URLs in `@misc` entries:
+
+```bibtex
+@Misc{Infura,
+  author = {Infura},
+  title  = {Ethereum API},
+  year   = {2023},
+  url    = {\url{https://www.infura.io/}},
+}
+```
+
+Made as follows in JabRef:
+
+<img src="assets/images/clickable-misc-bibtex-entry-jabref-screenshot.png" width="650">
+
+Requires `\usepackage{hyperref}` in the preamble.
+
+```tex
+\usepackage[
+	colorlinks,
+	citecolor=blue,
+	urlcolor=blue,
+	bookmarks=false,
+	hypertexnames=true
+]{hyperref}
+```
+
+Renders as follows:
+
+<img src="assets/images/clickable-misc-bibtex-reference-rendering-screenshot.png" width="350">
+
+## Bibliography management
+
+Recommended: [jabref.org](https://www.jabref.org/) (open source and 
+	[recommended by MIT](https://libguides.mit.edu/cite-write/bibtex#:~:text=If%20you%20primarily,Started%20guidance.))
+
+Save library as `bibliography.bib` directly into LaTeX project directory and specify 
+`\bibliography{bibliography.bib}` in the `main.tex` file to avoid compile errors due to temporary
+files such as `bibliography.bib.sav` created by JabRef.
+
+```tex
+\bibliography{bibliography.bib}
+```
+
+Other:
 
 +	[mybib.com](https://www.mybib.com/) (recommended, free, browser-based and `.bib` file export),
-+	[jabref.org](https://www.jabref.org/) (open source and 
-	[recommended by MIT](https://libguides.mit.edu/cite-write/bibtex#:~:text=If%20you%20primarily,Started%20guidance.))
 +	[citethis.net](https://citethis.net/Harvard) (no `.bib` file), or
 +	[easybib.com](https://www.easybib.com/) (owned by Chegg and premium only).
 
