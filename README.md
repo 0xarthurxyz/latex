@@ -15,6 +15,17 @@ Bold:
 \textbf{code coverage}
 ```
 
+Monospace (like `code` in Markdown):
+
+```tex
+\texttt{code}
+```
+
+> The `\texttt` command typesets its argument in teletype font (sometimes called typewriter or 
+> monospace font). The trailing `tt` is an abbreviation for **t**ele**t**ype.
+
+Source: [tex.stackexchange.com](https://tex.stackexchange.com/a/470806)
+
 ## Citations
 
 In text citation:
