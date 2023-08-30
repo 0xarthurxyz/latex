@@ -277,8 +277,25 @@ Using the `graphicx` package:
 \end{document}
 ```
 
-with file at `assets/images/request-flow.drawio.png`.
-
 Renders as:
 
 <img src="assets/images/figure-graphicx-rendering-screenshot.png" width="650">
+
+
+```tex
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.1]{bbk-logo.png}
+\end{figure}
+```
+
+Renders as:
+
+<img src="assets/images/bbk-logo-figure-screenshot.png" width="550">
+
+
+## Colours with the `xcolor` package
+
+```tex
+\usepackage{xcolor}
+```
